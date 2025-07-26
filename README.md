@@ -177,7 +177,7 @@ VALUES ('REPLACE_WITH_YOUR_CERTIFICATE_IMAGE_URL.png');
 
 -- Insert one example comment
 INSERT INTO public.portfolio_comments (content, user_name)
-VALUES ('Created By Khalifa Al-Hasan', 'ekizr');
+VALUES ('Created By Khalifa Al-Hasan', 'alzr');
 
 ```
 
@@ -242,8 +242,8 @@ If you have any questions or need help with the setup, feel free to reach out\!
 
 **Khalifa Al-Hasan**
 
-- Website: [https://www.eki.my.id/](https://www.eki.my.id/)
-- GitHub: [EkiZR](https://github.com/EkiZR)
+- Website: [https://www.al.my.id/](https://www.al.my.id/)
+- GitHub: [alZR](https://github.com/alZR)
 
 ---
 
