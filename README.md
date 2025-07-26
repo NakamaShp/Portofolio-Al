@@ -1,4 +1,4 @@
-# Portfolio V5
+# Portfolio Al
 
 Hello everyone\! 👋
 
@@ -6,7 +6,7 @@ Let me introduce myself, I'm **Khalifa Al-Hasan**. On this occasion, I'd like to
 
 ## 🚀 Live Demo
 
-**Website Link:** [https://www.eki.my.id/](https://www.eki.my.id/)
+**Website Link:** [https://www.al.my.id/](https://www.al.my.id/)
 
 ## 🛠️ Tech Stack
 
@@ -35,8 +35,8 @@ Follow these steps to run the project locally:
 ### 1\. Clone the Repository
 
 ```bash
-git clone https://github.com/EkiZR/Portofolio_V5.git
-cd Portofolio_V5
+git clone https://github.com/NakamaShp/Portofolio-Al.git
+cd Portofolio-Al
 ```
 
 ### 2\. Install Dependencies
