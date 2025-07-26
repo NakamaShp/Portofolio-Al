@@ -2,7 +2,7 @@
 
 Hello everyone\! 👋
 
-Let me introduce myself, I'm **Eki Zulfar Rachman**. On this occasion, I'd like to share the portfolio website project that I've developed.
+Let me introduce myself, I'm **Khalifa Al-Hasan**. On this occasion, I'd like to share the portfolio website project that I've developed.
 
 ## 🚀 Live Demo
 
@@ -12,21 +12,21 @@ Let me introduce myself, I'm **Eki Zulfar Rachman**. On this occasion, I'd like 
 
 This project is built using modern web technologies:
 
-  - **ReactJS** - Frontend framework
-  - **Tailwind CSS** - Utility-first CSS framework
-  - **Supabase** - Backend for portfolio data, certificates, and comment system
-  - **AOS** - Animate On Scroll library
-  - **Framer Motion** - Animation library
-  - **Lucide** - Icon library
-  - **Material UI** - React component library
-  - **SweetAlert2** - Beautiful alert dialogs
+- **ReactJS** - Frontend framework
+- **Tailwind CSS** - Utility-first CSS framework
+- **Supabase** - Backend for portfolio data, certificates, and comment system
+- **AOS** - Animate On Scroll library
+- **Framer Motion** - Animation library
+- **Lucide** - Icon library
+- **Material UI** - React component library
+- **SweetAlert2** - Beautiful alert dialogs
 
 ## 📋 Prerequisites
 
 Before running this project, ensure you have the following installed:
 
-  - **Node.js** (version 14.x or higher)
-  - **npm** or **yarn** package manager
+- **Node.js** (version 14.x or higher)
+- **npm** or **yarn** package manager
 
 ## 🏃‍♂️ Getting Started
 
@@ -79,8 +79,8 @@ All backend data for this project (portfolio, certificates, and comments) is man
 
 ### 1\. Create Supabase Project
 
-  - Go to [Supabase](https://supabase.com/) and create a new project.
-  - Keep your **Project URL** and **anon public key** handy. You can find them in **Settings \> API**.
+- Go to [Supabase](https://supabase.com/) and create a new project.
+- Keep your **Project URL** and **anon public key** handy. You can find them in **Settings \> API**.
 
 ### 2\. Setup Database Tables & Policies
 
@@ -160,32 +160,32 @@ ON storage.objects FOR SELECT TO public USING (bucket_id = 'profile-images');
 -- ---- EXAMPLE DATA INSERTION ----
 
 -- Insert one example project
-INSERT INTO public.projects ("Title", "Description", "Img", "Link", "Github", "Features", "TechStack") 
+INSERT INTO public.projects ("Title", "Description", "Img", "Link", "Github", "Features", "TechStack")
 VALUES (
-    'Example Project Title', 
-    'A simple description for this example project, explaining its main purpose and goals.', 
-    'REPLACE_WITH_YOUR_PROJECT_IMAGE_URL.png', 
-    'REPLACE_WITH_YOUR_LIVE_DEMO_URL.com', 
-    'REPLACE_WITH_YOUR_GITHUB_REPO_URL.com', 
-    '["Main Feature A", "Core Function B", "Key Ability C"]', 
+    'Example Project Title',
+    'A simple description for this example project, explaining its main purpose and goals.',
+    'REPLACE_WITH_YOUR_PROJECT_IMAGE_URL.png',
+    'REPLACE_WITH_YOUR_LIVE_DEMO_URL.com',
+    'REPLACE_WITH_YOUR_GITHUB_REPO_URL.com',
+    '["Main Feature A", "Core Function B", "Key Ability C"]',
     '["React", "Supabase", "Tailwind CSS"]'
 );
 
 -- Insert one example certificate
-INSERT INTO public.certificates ("Img") 
+INSERT INTO public.certificates ("Img")
 VALUES ('REPLACE_WITH_YOUR_CERTIFICATE_IMAGE_URL.png');
 
 -- Insert one example comment
-INSERT INTO public.portfolio_comments (content, user_name) 
-VALUES ('Created By Eki Zulfar Rachman', 'ekizr');
+INSERT INTO public.portfolio_comments (content, user_name)
+VALUES ('Created By Khalifa Al-Hasan', 'ekizr');
 
 ```
 
 ### 3\. Enable Realtime (for Comment System)
 
-  - Go to **Database \> Replication**.
-  - Under "Source", click on the "0 tables" text.
-  - Enable replication for the `portfolio_comments` table by toggling the switch. This will make the comment section update in real-time.
+- Go to **Database \> Replication**.
+- Under "Source", click on the "0 tables" text.
+- Enable replication for the `portfolio_comments` table by toggling the switch. This will make the comment section update in real-time.
 
 ## 🔧 Environment Variables Setup
 
@@ -199,36 +199,38 @@ VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
 
 **Important:**
 
-  - All environment variables must be prefixed with `VITE_` for Vite to access them.
-  - Restart your development server after creating or modifying the `.env` file.
-  - **Never** commit your `.env` file to version control. Ensure it's listed in your `.gitignore` file.
+- All environment variables must be prefixed with `VITE_` for Vite to access them.
+- Restart your development server after creating or modifying the `.env` file.
+- **Never** commit your `.env` file to version control. Ensure it's listed in your `.gitignore` file.
 
 ### Configuration File (`supabase.js`)
 
 Ensure your Supabase client configuration file (e.g., `src/supabase.js`) uses these environment variables.
 
 ```javascript
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from "@supabase/supabase-js";
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
-const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
 if (!supabaseUrl || !supabaseKey) {
-  throw new Error("Supabase URL and Anon Key are required. Check your .env file.")
+  throw new Error(
+    "Supabase URL and Anon Key are required. Check your .env file."
+  );
 }
 
-export const supabase = createClient(supabaseUrl, supabaseKey)
+export const supabase = createClient(supabaseUrl, supabaseKey);
 ```
 
 ## 🚨 Troubleshooting
 
 If you encounter issues while running the project:
 
-  - Ensure Node.js is correctly installed.
-  - Verify you're in the correct project directory.
-  - Check that all dependencies are installed without errors.
-  - Make sure your Supabase configuration in the `.env` file is correct and the server has been restarted.
-  - Clear your browser cache and try again.
+- Ensure Node.js is correctly installed.
+- Verify you're in the correct project directory.
+- Check that all dependencies are installed without errors.
+- Make sure your Supabase configuration in the `.env` file is correct and the server has been restarted.
+- Clear your browser cache and try again.
 
 ## 📝 Usage & Credits
 
@@ -238,11 +240,11 @@ We would appreciate it if you decide to use this project. Please include proper 
 
 If you have any questions or need help with the setup, feel free to reach out\!
 
-**Eki Zulfar Rachman**
+**Khalifa Al-Hasan**
 
-  - Website: [https://www.eki.my.id/](https://www.eki.my.id/)
-  - GitHub: [EkiZR](https://github.com/EkiZR)
+- Website: [https://www.eki.my.id/](https://www.eki.my.id/)
+- GitHub: [EkiZR](https://github.com/EkiZR)
 
------
+---
 
 ⭐ If this project helped you, please consider giving it a star on GitHub\!
